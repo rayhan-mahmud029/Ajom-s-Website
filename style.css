@@ -157,7 +157,9 @@
 .s3{
  width: 80%;
  height: 125vh;
- border: 2px solid #cecece;
+ border-top: 2px solid #cecece;
+ border-left: 2px solid #cecece;
+ border-right: 2px solid #cecece;
  border-radius: 10px 10px 0 0;
  margin: auto;
  padding: 30px;
@@ -220,7 +222,19 @@
   padding: 10px 0 ;
 }
 
-
+footer {
+  padding: 20px;
+  background: #cecece;
+}
+hr {
+  border: 1px solid #929292;
+}
+footer p{
+  color: grey;
+  font-size: 18px;
+  font-family: ubuntu;
+  text-align: center;
+}
 
 
 
@@ -304,11 +318,14 @@
     font-size: 17px;
     font-weight: 300;
   }
+    footer p{
+    font-size: 13px;
+  }
 }
 
 
 
-@media  only screen and (max-width: 360px){
+@media  only screen and (max-width: 360px) and (min-width: 320px){
   .text h4{
     font-size: 35px;
   }
@@ -323,8 +340,42 @@
   .text{
     width: 80%;
   }
+  footer p{
+    font-size: 12px;
+  }
 
 }
+
+@media  only screen and (max-width: 320px) {
+  .text h4{
+    font-size: 35px;
+  }
+
+  .text h1{
+    font-size: 20px;
+  }
+  .text h6{
+    font-size: 30px;
+    padding-top: 25px;
+  }
+  .text{
+    width: 80%;
+  }
+  .s3{
+    height: 145vh;
+  }
+  .s3 h6{
+    font-size: 25px;
+  }
+  footer p{
+    font-size: 10px;
+  }
+
+}
+
+ 
+
+
 
 @media  only screen and (max-width: 1350px) and (min-width: 1000px){
 .text{
@@ -363,5 +414,7 @@
 .social-png-div{
   justify-content: center;
 }
-
+  footer p{
+    font-size: 16px;
+  }
 }
